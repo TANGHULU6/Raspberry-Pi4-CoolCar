@@ -1,0 +1,17 @@
+else if(command == 'S' || command == 's'){
+            Serial.println("Motor running forward");
+          motor1.run(FORWARD);
+          motor2.run(FORWARD);
+          motor3.run(FORWARD);
+          motor4.run(BACKWARD);
+           delay(50);
+            stopMotors();
+          }else if(command == 'W' || command == 'w'){
+            Serial.println("Motor running backward");
+          motor1.run(BACKWARD);
+          motor2.run(BACKWARD);
+          motor3.run(BACKWARD);
+          motor4.run(FORWARD);
+          delay(50);
+            stopMotors();
+          }
